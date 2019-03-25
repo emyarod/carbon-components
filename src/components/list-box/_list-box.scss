@@ -300,57 +300,16 @@ $list-box-menu-width: rem(300px);
   // The overall container element for a `list-box`. Has two variants,
   // `disabled` and `inline`.
   .#{$prefix}--list-box__wrapper--inline {
-    display: inline-grid;
-    align-items: center;
-    grid-template: auto auto / auto auto;
-    grid-gap: rem(4px);
-
-    .#{$prefix}--label {
-      @include type-style('body-short-01');
-    }
-
-    .#{$prefix}--label,
-    .#{$prefix}--form__helper-text,
-    .#{$prefix}--form-requirement {
-      margin: 0;
-    }
-
-    .#{$prefix}--form__helper-text {
-      max-width: none;
-    }
-
-    .#{$prefix}--form-requirement {
-      grid-column: 2;
-    }
+    @include list-box-inline-wrapper;
   }
 
   .#{$prefix}--list-box {
-    position: relative;
-    width: $list-box-width;
-    height: rem(40px);
-    max-height: rem(40px);
-    background-color: $field-01;
-    border: none;
-    border-bottom: 1px solid $ui-04;
-    cursor: pointer;
-    color: $text-01;
-    transition: all $duration--fast-02 motion(standard, productive);
-
-    &:hover {
-      background-color: $hover-ui;
-    }
+    @include focus-outline('reset');
+    @include list-box;
   }
 
   .#{$prefix}--list-box--expanded {
-    border-bottom-color: $ui-03;
-  }
-
-  .#{$prefix}--list-box--expanded:hover {
-    background-color: $field-01;
-  }
-
-  .#{$prefix}--list-box--expanded:hover.#{$prefix}--list-box--light:hover {
-    background-color: $field-02;
+    @include list-box--expanded('.#{$prefix}--list-box--light');
   }
 
   .#{$prefix}--list-box .#{$prefix}--text-input {
@@ -359,14 +318,7 @@ $list-box-menu-width: rem(300px);
 
   // invalid states
   .#{$prefix}--list-box__invalid-icon {
-    position: absolute;
-    top: $carbon--spacing-04;
-    right: $carbon--spacing-08;
-    fill: $support-01;
-  }
-
-  .#{$prefix}--list-box--inline .#{$prefix}--list-box__invalid-icon {
-    top: $carbon--spacing-03;
+    @include list-box__invalid-icon;
   }
 
   .#{$prefix}--list-box[data-invalid] .#{$prefix}--list-box__field {
@@ -380,11 +332,7 @@ $list-box-menu-width: rem(300px);
 
   // Light variation for 'list-box'
   .#{$prefix}--list-box--light {
-    background-color: $field-02;
-  }
-
-  .#{$prefix}--list-box--light.#{$prefix}--list-box--expanded {
-    border-bottom-width: 0;
+    @include list-box--light;
   }
 
   // Disabled state for `list-box`
@@ -440,12 +388,7 @@ $list-box-menu-width: rem(300px);
 
   // Inline variant for a `list-box`
   .#{$prefix}--list-box.#{$prefix}--list-box--inline {
-    background-color: $field-02;
-    border-width: 0;
-
-    &:hover {
-      background-color: $hover-ui;
-    }
+    @include list-box--inline('.#{$prefix}--list-box__invalid-icon');
   }
 
   .#{$prefix}--list-box.#{$prefix}--list-box--inline.#{$prefix}--list-box--expanded {
@@ -475,10 +418,6 @@ $list-box-menu-width: rem(300px);
     padding: 0 $carbon--spacing-03;
   }
 
-  .#{$prefix}--list-box.#{$prefix}--list-box--inline .#{$prefix}--list-box__invalid-icon {
-    right: $carbon--spacing-07;
-  }
-
   .#{$prefix}--list-box--inline .#{$prefix}--list-box__label {
     color: $text-01;
   }
@@ -494,9 +433,14 @@ $list-box-menu-width: rem(300px);
     padding: 0 $carbon--spacing-09 0 $carbon--spacing-05;
     cursor: pointer;
     outline: none;
+    border-bottom: 1px solid $ui-04;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .#{$prefix}--list-box--inline .#{$prefix}--list-box__field {
+    border: none;
   }
 
   .#{$prefix}--list-box__field:focus {

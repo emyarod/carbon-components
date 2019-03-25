@@ -230,60 +230,26 @@
 
 @mixin dropdown--x {
   .#{$prefix}--dropdown__wrapper--inline {
-    display: inline-grid;
-    align-items: center;
-    grid-template: auto auto / auto min-content;
-    grid-gap: rem(4px);
-
-    .#{$prefix}--label {
-      @include type-style('body-short-01');
-    }
-
-    .#{$prefix}--label,
-    .#{$prefix}--form__helper-text,
-    .#{$prefix}--form-requirement {
-      margin: 0;
-    }
-
-    .#{$prefix}--form-requirement {
-      grid-column: 2;
-    }
+    @include list-box-inline-wrapper;
   }
 
   .#{$prefix}--dropdown {
     @include reset;
-    @include focus-outline('reset');
-    position: relative;
+    @include list-box;
     list-style: none;
     display: block;
-    background-color: $field-01;
-    border: none;
-    border-bottom: 1px solid $ui-04;
-    width: 100%;
-    height: rem(40px);
-    cursor: pointer;
-    color: $text-01;
-    outline: 2px solid transparent;
-    transition: $duration--fast-02 motion(standard, productive) all;
 
     &:focus {
       @include focus-outline('outline');
     }
-
-    &:hover {
-      background-color: $hover-ui;
-    }
-  }
-
-  .#{$prefix}--dropdown--open {
-    border-bottom-color: $ui-03;
   }
 
   .#{$prefix}--dropdown--invalid {
     @include focus-outline('invalid');
 
     .#{$prefix}--dropdown-text {
-      padding-right: rem(56px); // TODO: spacing token
+      padding-right: carbon--mini-units(9);
+      border-bottom: 0;
     }
 
     + .#{$prefix}--form-requirement {
@@ -294,11 +260,7 @@
   }
 
   .#{$prefix}--dropdown__invalid-icon {
-    position: absolute;
-    top: 50%;
-    right: rem(40px); // TODO: spacing token
-    fill: $support-01;
-    transform: translateY(-50%);
+    @include list-box__invalid-icon;
   }
 
   .#{$prefix}--dropdown--open:hover {
@@ -329,19 +291,6 @@
     pointer-events: none;
     transition: transform $duration--fast-02 motion(standard, productive);
     transform-origin: 50% 45%;
-  }
-
-  .#{$prefix}--dropdown-text {
-    @include type-style('body-short-01');
-    display: block;
-    height: rem(40px);
-    padding-top: $carbon--spacing-04;
-    padding-bottom: $carbon--spacing-04;
-    padding-left: $carbon--spacing-05;
-    padding-right: rem(42px); // 2rem + SVG width
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .#{$prefix}--dropdown-list {
@@ -442,16 +391,13 @@
     border-bottom-color: transparent;
     cursor: not-allowed;
 
-    &:hover {
-      background-color: $field-01;
-    }
-
     &:focus {
       outline: none;
     }
 
     .#{$prefix}--dropdown-text {
       color: $disabled-02;
+      border-bottom: 0;
     }
 
     .#{$prefix}--dropdown__arrow {
@@ -469,6 +415,7 @@
   }
 
   .#{$prefix}--dropdown--inline {
+    @include list-box--inline('.#{$prefix}--dropdown__invalid-icon');
     justify-self: start;
     display: inline-block;
     border-bottom-color: transparent;
@@ -477,42 +424,26 @@
     height: rem(32px);
     background-color: $field-02;
 
-    &:hover {
-      background-color: $hover-ui;
-    }
-
-    &.#{$prefix}--dropdown--disabled {
-      background-color: $field-02;
-    }
-
     .#{$prefix}--dropdown__arrow {
       top: rem(8px);
       right: rem(8px);
     }
   }
 
-  .#{$prefix}--dropdown--inline.#{$prefix}--dropdown--open {
+  .#{$prefix}--dropdown--inline.#{$prefix}--dropdown--open,
+  .#{$prefix}--dropdown--light.#{$prefix}--dropdown--open {
     background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 
   .#{$prefix}--dropdown--inline .#{$prefix}--dropdown-text {
-    display: inline-block;
-    padding: rem(7px) rem(32px) rem(7px) $carbon--spacing-04; // TODO: spacing token
+    padding-right: $carbon--spacing-07;
+    padding-left: $carbon--spacing-04;
     height: rem(32px);
-    overflow: visible;
-    color: $text-01;
-  }
-
-  .#{$prefix}--dropdown--inline.#{$prefix}--dropdown--disabled .#{$prefix}--dropdown-text {
-    color: $disabled-02;
-  }
-
-  .#{$prefix}--dropdown--inline.#{$prefix}--dropdown--disabled:focus .#{$prefix}--dropdown-text {
-    outline: 0;
-  }
-
-  .#{$prefix}--dropdown--inline.#{$prefix}--dropdown--invalid .#{$prefix}--dropdown__invalid-icon {
-    right: rem(32px);
+    border-bottom: 0;
   }
 
   .#{$prefix}--dropdown--inline.#{$prefix}--dropdown--invalid .#{$prefix}--dropdown-text {

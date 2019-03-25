@@ -7,16 +7,16 @@
 
 <div class="{{@root.prefix}}--form-item">
   {{#if featureFlags.componentsX}}
-  <div class="{{@root.prefix}}--dropdown__wrapper {{#if inline}}{{@root.prefix}}--dropdown__wrapper--inline{{/if}}">
+  <div class="{{@root.prefix}}--dropdown__wrapper{{#if inline}} {{@root.prefix}}--dropdown__wrapper--inline {{/if}}">
     {{/if}}
     <label for="dropdown-id" class="{{@root.prefix}}--label">Dropdown label</label>
     {{#unless inline}}
     <div class="{{@root.prefix}}--form__helper-text">Optional helper text.</div>
     {{/unless}}
     <ul data-dropdown{{#if inline}} data-dropdown-type="inline" {{/if}} data-value id="dropdown-id"
-      class="{{@root.prefix}}--dropdown {{#if up}}{{@root.prefix}}--dropdown--up{{/if}} {{#if light}}{{@root.prefix}}--dropdown--light{{/if}} {{#if inline}}{{@root.prefix}}--dropdown--inline{{/if}}"
+      class="{{@root.prefix}}--dropdown{{#if up}} {{@root.prefix}}--dropdown--up{{/if}} {{#if light}}{{@root.prefix}}--dropdown--light {{@root.prefix}}--list-box--light{{/if}} {{#if inline}}{{@root.prefix}}--dropdown--inline {{@root.prefix}}--list-box--inline{{/if}}"
       tabindex="0">
-      <li class="{{@root.prefix}}--dropdown-text">
+      <li class="{{@root.prefix}}--list-box__field {{@root.prefix}}--dropdown-text">
         {{#unless inline}} Dropdown option {{else}}
         <span class="{{@root.prefix}}--dropdown-text__inner">Inline Dropdown label</span>
         {{/unless}}
@@ -50,15 +50,15 @@
 {{#unless inline}}
 <div class="{{@root.prefix}}--form-item">
   {{#if featureFlags.componentsX}}
-  <div class="{{@root.prefix}}--dropdown__wrapper {{#if inline}}{{@root.prefix}}--dropdown__wrapper--inline{{/if}}">
+  <div class="{{@root.prefix}}--dropdown__wrapper{{#if inline}} {{@root.prefix}}--dropdown__wrapper--inline {{/if}}">
     {{/if}}
     <label for="dropdown-id-longer-helper-text" class="{{@root.prefix}}--label">Dropdown label</label>
     <div class="{{@root.prefix}}--form__helper-text">Optional helper text here; if message is more than one line text
       should wrap (~100 character count maximum)</div>
     <ul data-dropdown{{#if inline}} data-dropdown-type="inline" {{/if}} data-value id="dropdown-id-longer-helper-text"
-      class="{{@root.prefix}}--dropdown {{#if up}}{{@root.prefix}}--dropdown--up{{/if}} {{#if light}}{{@root.prefix}}--dropdown--light{{/if}} {{#if inline}}{{@root.prefix}}--dropdown--inline{{/if}}"
+      class="{{@root.prefix}}--dropdown{{#if up}} {{@root.prefix}}--dropdown--up{{/if}} {{#if light}}{{@root.prefix}}--dropdown--light {{@root.prefix}}--list-box--light{{/if}} {{#if inline}}{{@root.prefix}}--dropdown--inline {{@root.prefix}}--list-box--inline{{/if}}"
       tabindex="0">
-      <li class="{{@root.prefix}}--dropdown-text">
+      <li class="{{@root.prefix}}--list-box__field {{@root.prefix}}--dropdown-text">
         {{#unless inline}} Dropdown option {{else}}
         <span class="{{@root.prefix}}--dropdown-text__inner">Inline Dropdown label</span>
         {{/unless}}
@@ -92,7 +92,7 @@
 
 <div class="{{@root.prefix}}--form-item">
   {{#if featureFlags.componentsX}}
-  <div class="{{@root.prefix}}--dropdown__wrapper {{#if inline}}{{@root.prefix}}--dropdown__wrapper--inline{{/if}}">
+  <div class="{{@root.prefix}}--dropdown__wrapper{{#if inline}} {{@root.prefix}}--dropdown__wrapper--inline {{/if}}">
     {{/if}}
     <label for="dropdown-id-disabled" class="{{@root.prefix}}--label {{@root.prefix}}--label--disabled">Dropdown
       label</label>
@@ -104,7 +104,7 @@
     <ul data-dropdown{{#if inline}} data-dropdown-type="inline" {{/if}} data-value id="dropdown-id-disabled"
       class="{{@root.prefix}}--dropdown{{#if up}} {{@root.prefix}}--dropdown--up{{/if}}{{#if light}} {{@root.prefix}}--dropdown--light{{/if}}{{#if inline}} {{@root.prefix}}--dropdown--inline{{/if}} {{@root.prefix}}--dropdown--disabled"
       tabindex="0">
-      <li class="{{@root.prefix}}--dropdown-text">
+      <li class="{{@root.prefix}}--list-box__field {{@root.prefix}}--dropdown-text">
         {{#unless inline}} Dropdown option {{else}}
         <span class="{{@root.prefix}}--dropdown-text__inner">Inline Dropdown label</span>
         {{/unless}}
@@ -138,7 +138,7 @@
 <div class="{{@root.prefix}}--form-item">
   {{#if featureFlags.componentsX}}
   <div
-    class="{{@root.prefix}}--dropdown__wrapper {{#if inline}}{{@root.prefix}}--dropdown__wrapper--inline {{@root.prefix}}--dropdown__wrapper--inline--invalid{{/if}}">
+    class="{{@root.prefix}}--dropdown__wrapper {{#if inline}}{{@root.prefix}}--dropdown__wrapper--inline {{@root.prefix}}--list-box__wrapper--inline {{@root.prefix}}--dropdown__wrapper--inline {{@root.prefix}}--list-box__wrapper--inline--invalid{{/if}}">
     {{/if}}
     <label for="dropdown-id-invalid" class="{{@root.prefix}}--label">Dropdown
       label</label>
@@ -148,12 +148,12 @@
       should wrap (~100 character count maximum)</div>
     {{/unless}}
     <ul data-dropdown{{#if inline}} data-dropdown-type="inline" {{/if}} data-value id="dropdown-id-invalid"
-      class="{{@root.prefix}}--dropdown {{@root.prefix}}--dropdown--invalid {{#if up}}{{@root.prefix}}--dropdown--up{{/if}} {{#if light}}{{@root.prefix}}--dropdown--light{{/if}}{{#if inline}} {{@root.prefix}}--dropdown--inline{{/if}}"
+      class="{{@root.prefix}}--dropdown {{@root.prefix}}--list-box {{@root.prefix}}--dropdown--invalid {{#if up}}{{@root.prefix}}--dropdown--up{{/if}} {{#if light}}{{@root.prefix}}--dropdown--light {{@root.prefix}}--list-box--light{{/if}}{{#if inline}} {{@root.prefix}}--dropdown--inline{{/if}}"
       tabindex="0" data-invalid>
       {{#if featureFlags.componentsX}}
       {{ carbon-icon 'WarningFilled16' class=(add @root.prefix '--dropdown__invalid-icon')}}
       {{/if}}
-      <li class="{{@root.prefix}}--dropdown-text">
+      <li class="{{@root.prefix}}--list-box__field {{@root.prefix}}--dropdown-text">
         {{#unless inline}} Dropdown option {{else}}
         <span class="{{@root.prefix}}--dropdown-text__inner">Inline Dropdown label</span>
         {{/unless}}
