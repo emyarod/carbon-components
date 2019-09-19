@@ -220,10 +220,13 @@
     }
   }
 
-  .#{$prefix}--text-input__readonly-icon
-    + .#{$prefix}--tooltip--definition
-    > .#{$prefix}--tooltip__trigger {
-    border-bottom: none;
+  .#{$prefix}--text-input__tooltip {
+    @include tooltip--trigger('definition', 'bottom');
+    @include tooltip--placement('definition', 'bottom', 'center');
+  }
+
+  .#{$prefix}--text-input__tooltip--focus {
+    @include tooltip--visible();
   }
 }
 

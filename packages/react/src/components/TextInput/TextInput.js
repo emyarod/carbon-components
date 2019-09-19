@@ -6,18 +6,19 @@
  */
 
 import PropTypes from 'prop-types';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useMemo } from 'react';
 import classNames from 'classnames';
 import { settings } from 'carbon-components';
 import { WarningFilled16, EditOff16 } from '@carbon/icons-react';
 import PasswordInput from './PasswordInput';
 import ControlledPasswordInput from './ControlledPasswordInput';
-import TooltipDefinition from '../TooltipDefinition/TooltipDefinition';
 import TooltipIcon from '../TooltipIcon/TooltipIcon';
 import { textInputProps } from './util';
 import requiredIfValueExists from '../../prop-types/requiredIfValueExists';
+import setupGetInstanceId from '../../tools/setupGetInstanceId';
 
 const { prefix } = settings;
+const getInstanceId = setupGetInstanceId();
 const DefaultCharCounter = ({ disabled, count, maxLength }) => {
   const charCounterClasses = classNames(
     `${prefix}--text-input--character-counter`,
@@ -37,6 +38,51 @@ const DefaultCharCounter = ({ disabled, count, maxLength }) => {
     </span>
   );
 };
+const InputField = ({
+  invalid,
+  sharedTextInputProps,
+  errorId,
+  value,
+  onInput,
+  readOnly,
+  id,
+}) => {
+  const [inputIsFocused, setInputIsFocused] = useState(false);
+  const instanceId = useMemo(getInstanceId, []);
+  const input = (
+    <input
+      {...textInputProps({ invalid, sharedTextInputProps, errorId })}
+      value={value}
+      onInput={onInput}
+      onFocus={() => setInputIsFocused(true)}
+      onBlur={() => setInputIsFocused(false)}
+    />
+  );
+  if (readOnly && value) {
+    const tooltipId = `${id || instanceId}--input-tooltip`;
+    const inputTooltipClasses = classNames(
+      `${prefix}--text-input__tooltip`,
+      `${prefix}--tooltip--a11y`,
+      {
+        [`${prefix}--text-input__tooltip--focus`]: inputIsFocused,
+      }
+    );
+    return (
+      <>
+        <span aria-describedby={`${tooltipId}`} className={inputTooltipClasses}>
+          {input}
+        </span>
+        <div
+          className={`${prefix}--assistive-text`}
+          id={`${tooltipId}`}
+          role="tooltip">
+          {value}
+        </div>
+      </>
+    );
+  }
+  return input;
+};
 const TextInput = React.forwardRef(function TextInput(
   {
     labelText,
@@ -54,10 +100,6 @@ const TextInput = React.forwardRef(function TextInput(
     readOnly,
     readOnlyIconLabel,
     readOnlyIconTooltipProps = {
-      direction: 'bottom',
-      align: 'center',
-    },
-    readOnlyInputTooltipProps = {
       direction: 'bottom',
       align: 'center',
     },
@@ -129,21 +171,7 @@ const TextInput = React.forwardRef(function TextInput(
       {invalidText}
     </div>
   ) : null;
-  const inputField = (
-    <input
-      {...textInputProps({ invalid, sharedTextInputProps, errorId })}
-      value={value}
-      onInput={e => setInput(e.target.value)}
-    />
-  );
-  const input =
-    readOnly && value ? (
-      <TooltipDefinition {...readOnlyInputTooltipProps} tooltipText={value}>
-        {inputField}
-      </TooltipDefinition>
-    ) : (
-      inputField
-    );
+
   const TextInputHelperText = () => {
     const helperContent = helperText ? (
       <div className={helperTextClasses}>{helperText}</div>
@@ -160,7 +188,6 @@ const TextInput = React.forwardRef(function TextInput(
         </div>
       );
     }
-
     return helperContent;
   };
 
@@ -182,7 +209,10 @@ const TextInput = React.forwardRef(function TextInput(
             <EditOff16 />
           </TooltipIcon>
         )}
-        {input}
+        <InputField
+          {...{ invalid, sharedTextInputProps, errorId, value, readOnly, id }}
+          onInput={e => setInput(e.target.value)}
+        />
       </div>
       {error}
     </div>
@@ -294,28 +324,6 @@ TextInput.propTypes = {
    * Optionally specify props for the tooltip on the read only icon
    */
   readOnlyInputIconProps: PropTypes.shape({
-    /**
-     * Specify the direction of the tooltip. Can be either top or bottom.
-     */
-    direction: PropTypes.oneOf(['top', 'bottom']),
-
-    /**
-     * Specify the alignment (to the trigger button) of the tooltip.
-     * Can be one of: start, center, or end.
-     */
-    align: PropTypes.oneOf(['start', 'center', 'end']),
-
-    /**
-     * Optionally specify a custom id for the tooltip. If one is not provided,
-     * we generate a unique id for you.
-     */
-    id: PropTypes.string,
-  }),
-
-  /**
-   * Optionally specify props for the tooltip on the read only input field
-   */
-  readOnlyInputTooltipProps: PropTypes.shape({
     /**
      * Specify the direction of the tooltip. Can be either top or bottom.
      */

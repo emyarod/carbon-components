@@ -43,7 +43,7 @@ const props = {
       'Form validation UI content (invalidText)',
       'A valid value is required'
     ),
-    readOnly: boolean('Read only (readOnly)', false),
+    readOnly: boolean('Read only (readOnly)', true),
     readOnlyIconLabel: text(
       'Read-only icon label (readOnlyIconLabel)',
       'This input field is read-only'

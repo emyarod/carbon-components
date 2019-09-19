@@ -8,7 +8,23 @@
 @import 'layer';
 
 // Tooltip
-// Definition and Icon CSS only tooltip
+// Forces visible state for definition and icon only tooltip
+/// @access public
+/// @group tooltip
+@mixin tooltip--visible() {
+  &::before {
+    opacity: 1;
+  }
+
+  .#{$prefix}--assistive-text,
+  + .#{$prefix}--assistive-text {
+    clip: auto;
+    margin: auto;
+    overflow: visible;
+  }
+}
+
+/// A mix-in that represents the trigger button of definition and icon only tooltips
 /// @param {String} $tooltip-type ['icon'] - The type, from: `icon`, `definition`
 /// @param {String} $position ['bottom'] - The position, from: `top`, `right`, `bottom`, `left`
 /// @access public
@@ -85,10 +101,8 @@
   // content box
   // @todo Simplify CSS selectors on next major release
   &::after,
-  &:hover .#{$prefix}--assistive-text,
-  &:focus .#{$prefix}--assistive-text,
-  &:hover + .#{$prefix}--assistive-text,
-  &:focus + .#{$prefix}--assistive-text {
+  .#{$prefix}--assistive-text,
+  + .#{$prefix}--assistive-text {
     @include layer('overlay');
     width: max-content;
     max-width: rem(208px);
@@ -129,7 +143,8 @@
 
   &:hover,
   &:focus {
-    &::before,
+    @include tooltip--visible();
+
     &::after {
       opacity: 1;
     }
@@ -141,13 +156,6 @@
       to {
         opacity: 1;
       }
-    }
-
-    .#{$prefix}--assistive-text,
-    + .#{$prefix}--assistive-text {
-      clip: auto;
-      margin: auto;
-      overflow: visible;
     }
 
     .#{$prefix}--assistive-text,
@@ -183,10 +191,8 @@
   // @todo Simplify CSS selectors on next major release
   &::before,
   &::after,
-  &:hover .#{$prefix}--assistive-text,
-  &:focus .#{$prefix}--assistive-text,
-  &:hover + .#{$prefix}--assistive-text,
-  &:focus + .#{$prefix}--assistive-text {
+  .#{$prefix}--assistive-text,
+  + .#{$prefix}--assistive-text {
     @if ($position == 'top') {
       top: 0;
       left: 50%;
@@ -235,10 +241,8 @@
   // alignment options available only for top and bottom tooltip position
   // @todo Simplify CSS selectors on next major release
   &::after,
-  &:hover .#{$prefix}--assistive-text,
-  &:focus .#{$prefix}--assistive-text,
-  &:hover + .#{$prefix}--assistive-text,
-  &:focus + .#{$prefix}--assistive-text {
+  .#{$prefix}--assistive-text,
+  + .#{$prefix}--assistive-text {
     @if ($position == 'top') {
       top: -$body-spacing;
       @if ($align == 'start') {
