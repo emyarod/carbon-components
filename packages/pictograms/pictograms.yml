@@ -2382,6 +2382,13 @@
     - statue
     - city
     - cities
+- name: mexico-city--angel-of-independence
+  friendly_name: Mexico City Angel of Independence
+  aliases:
+    - Mexico City Angel of Independence
+    - statue
+    - city
+    - cities
 - name: mexico-city--museo--soumaya
   friendly_name: Mexico City Museo Soumaya
   aliases:
@@ -2616,6 +2623,25 @@
   friendly_name: NYC Manhattan 01
   aliases:
     - NYC Manhattan 01
+    - NYC Manhattan
+    - NYC
+    - Manhattan
+    - city
+    - cities
+- name: nyc--manhattan--01
+  friendly_name: NYC Manhattan 01
+  aliases:
+    - NYC Manhattan 01
+    - NYC Manhattan
+    - NYC
+    - Manhattan
+    - city
+    - cities
+- name: nyc--manhattan--02
+  friendly_name: NYC Manhattan 02
+  aliases:
+    - NYC Manhattan alt
+    - NYC Manhattan 02
     - NYC Manhattan
     - NYC
     - Manhattan
