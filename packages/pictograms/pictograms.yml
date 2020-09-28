@@ -337,6 +337,15 @@
     - data analytics
     - analytics
     - data
+- name: box--plot
+  friendly_name: Box plot
+  aliases:
+    - box
+    - plot
+    - box plot
+    - data analytics
+    - analytics
+    - data
 - name: build
   friendly_name: Build
   aliases:
@@ -1911,6 +1920,23 @@
     - chart
     - data analytics
     - analytics
+- name: heat--map--01
+  friendly_name: Heat map 01
+  aliases:
+    - heat map 01
+    - heat map
+    - heat
+    - chart
+    - data analytics
+    - analytics
+- name: heat--map--02
+  friendly_name: Heat map 02
+  aliases:
+    - heat map 02
+    - heat
+    - chart
+    - data analytics
+    - analytics
 - name: heat-map--02
   friendly_name: Heat map 02
   aliases:
@@ -2867,6 +2893,15 @@
     - data analytics
     - data
     - analytics
+- name: population--diagram
+  friendly_name: Population diagram
+  aliases:
+    - population diagram
+    - population
+    - charts
+    - data analytics
+    - data
+    - analytics
 - name: power
   friendly_name: Power
   aliases:
@@ -3047,6 +3082,15 @@
     - data
     - analytics
     - chart
+- name: relationship--diagram
+  friendly_name: Relationship diagram
+  aliases:
+    - relationship diagram
+    - relationship
+    - data analytics
+    - data
+    - analytics
+    - chart
 - name: renew
   friendly_name: Renew
   aliases:
@@ -3196,6 +3240,16 @@
     - weight
     - healthcare
 - name: scatter-matrix
+  friendly_name: Scatter matrix
+  aliases:
+    - scatter matrix
+    - scatter
+    - matrix
+    - chart
+    - data analytics
+    - data
+    - analytics
+- name: scatter--matrix
   friendly_name: Scatter matrix
   aliases:
     - scatter matrix
@@ -4144,6 +4198,15 @@
     - wireless
     - home
 - name: word-cloud
+  friendly_name: Word cloud
+  aliases:
+    - word cloud
+    - word
+    - cloud
+    - data analytics
+    - data
+    - analytics
+- name: word--cloud
   friendly_name: Word cloud
   aliases:
     - word cloud

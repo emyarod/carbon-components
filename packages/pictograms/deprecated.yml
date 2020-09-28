@@ -45,3 +45,25 @@ deprecated:
     reason:
       The sao-paulo--expanded--base pictogram has been deprecated in favor of
       sao-paulo
+  - name: box-plot
+    reason: The box-plot pictogram has been deprecated in favor of box--plot
+  - name: heat--map
+    reason:
+      The heat--map pictogram has been deprecated in favor of heat--map--01
+  - name: heat-map--02
+    reason:
+      The heat-map--02 pictogram has been deprecated in favor of heat--map--02
+  - name: population-diagram
+    reason:
+      The population-diagram pictogram has been deprecated in favor of
+      population--diagram
+  - name: relationship-diagram
+    reason:
+      The relationship-diagram pictogram has been deprecated in favor of
+      relationship--diagram
+  - name: scatter-matrix
+    reason:
+      The scatter-matrix pictogram has been deprecated in favor of
+      scatter--matrix
+  - name: word-cloud
+    reason: The word-cloud pictogram has been deprecated in favor of word--cloud
