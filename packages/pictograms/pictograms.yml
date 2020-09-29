@@ -19,6 +19,14 @@
     - new
     - additional
     - add
+- name: advanced--fraud--protection
+  friendly_name: Advanced fraud protection
+  aliases:
+    - advanced fraud protection
+- name: advanced--threats
+  friendly_name: Advanced threats
+  aliases:
+    - advanced threats
 - name: advocate
   friendly_name: Advocate
   aliases:
@@ -140,6 +148,10 @@
     - group
     - review
     - study
+- name: anonymous--users
+  friendly_name: Anonymous users
+  aliases:
+    - anonymous users
 - name: apartment
   friendly_name: Apartment
   aliases:
@@ -178,6 +190,10 @@
     - app
     - program
     - software
+- name: application--security
+  friendly_name: Application security
+  aliases:
+    - application security
 - name: archive
   friendly_name: Archive
   aliases:
@@ -195,6 +211,10 @@
     - Australia
     - globe
     - continent
+- name: assets
+  friendly_name: Assets
+  aliases:
+    - assets
 - name: augmented--reality
   friendly_name: Augmented reality
   aliases:
@@ -346,6 +366,14 @@
     - data analytics
     - analytics
     - data
+- name: build--leadership--and--culture
+  friendly_name: Build leadership and culture
+  aliases:
+    - build leadership and culture
+- name: bug--virus--malware
+  friendly_name: Bug virus malware
+  aliases:
+    - bug virus malware
 - name: build
   friendly_name: Build
   aliases:
@@ -951,6 +979,10 @@
     - cognos analytics
     - cognos
     - analytics
+- name: collaboration
+  friendly_name: Collaboration
+  aliases:
+    - collaboration
 - name: college
   friendly_name: College
   aliases:
@@ -1026,6 +1058,10 @@
     - blockchain
     - food
     - supply chain
+- name: continuous--security
+  friendly_name: Continuous security
+  aliases:
+    - continuous security
 - name: contract
   friendly_name: Contract
   aliases:
@@ -1095,6 +1131,10 @@
     - processing
     - storage
     - data storage
+- name: data--security
+  friendly_name: Data security
+  aliases:
+    - data security
 - name: data--set
   friendly_name: Data set
   aliases:
@@ -1152,6 +1192,10 @@
     - desktop
     - computer
     - PC
+- name: detect--and--stop--advancing--threats
+  friendly_name: Detect and stop advancing threats
+  aliases:
+    - detect and stop advancing threats
 - name: developer-z-os
   friendly_name: Developer z/OS®
   aliases:
@@ -2235,6 +2279,18 @@
     - lock 01
     - lock
     - security
+- name: lock--01
+  friendly_name: Lock 01
+  aliases:
+    - lock 01
+    - lock
+    - security
+- name: lock--02
+  friendly_name: Lock 02
+  aliases:
+    - lock 02
+    - lock
+    - security
 - name: lock--alt
   friendly_name: Lock 02
   aliases:
@@ -2245,6 +2301,20 @@
   friendly_name: Locked Network 01
   aliases:
     - locked network 01
+    - locked network
+    - network
+    - security
+- name: locked--network--01
+  friendly_name: Locked Network 01
+  aliases:
+    - locked network 01
+    - locked network
+    - network
+    - security
+- name: locked--network--02
+  friendly_name: Locked Network 02
+  aliases:
+    - locked network 02
     - locked network
     - network
     - security
@@ -3992,6 +4062,18 @@
     - unlock 01
     - unlock
     - security
+- name: unlock--01
+  friendly_name: Unlock 01
+  aliases:
+    - unlock 01
+    - unlock
+    - security
+- name: unlock--02
+  friendly_name: Unlock 02
+  aliases:
+    - unlock 02
+    - unlock
+    - security
 - name: unlock--alt
   friendly_name: Unlock 02
   aliases:
@@ -4315,3 +4397,95 @@
   aliases:
     - yoga 04
     - lifestyle
+- name: digital--id
+  friendly_name: Digital id
+  aliases:
+    - digital id
+- name: digital--trust
+  friendly_name: Digital trust
+  aliases:
+    - digital trust
+- name: endpoint--protection
+  friendly_name: Endpoint protection
+  aliases:
+    - endpoint protection
+- name: get--ahead--of--risk--and--compliance
+  friendly_name: Get ahead of risk and compliance
+  aliases:
+    - get ahead of risk and compliance
+- name: govern--users--and--identities
+  friendly_name: Govern users and identities
+  aliases:
+    - govern users and identities
+- name: high--risk--users
+  friendly_name: High risk users
+  aliases:
+    - high risk users
+- name: identity--trust--assessment
+  friendly_name: Identity trust assessment
+  aliases:
+    - identity trust assessment
+- name: locked--network--01
+  friendly_name: Locked network 01
+  aliases:
+    - locked network 01
+- name: locked--network--02
+  friendly_name: Locked network 02
+  aliases:
+    - locked network 02
+- name: master--threat--hunting
+  friendly_name: Master threat hunting
+  aliases:
+    - master threat hunting
+- name: network--protection
+  friendly_name: Network protection
+  aliases:
+    - network protection
+- name: protect--critical--assets
+  friendly_name: Protect critical assets
+  aliases:
+    - protect critical assets
+- name: secure--hybrid--cloud
+  friendly_name: Secure hybrid cloud
+  aliases:
+    - secure hybrid cloud
+- name: security--as--a--service
+  friendly_name: Security as a service
+  aliases:
+    - security as a service
+- name: security--hygiene
+  friendly_name: Security hygiene
+  aliases:
+    - security hygiene
+- name: security--intelligence
+  friendly_name: Security intelligence
+  aliases:
+    - security intelligence
+- name: strategy--and--risk
+  friendly_name: Strategy and risk
+  aliases:
+    - strategy and risk
+- name: threat--management
+  friendly_name: Threat management
+  aliases:
+    - threat management
+- name: tool--overload
+  friendly_name: Tool overload
+  aliases:
+    - tool overload
+- name: trusted--user
+  friendly_name: Trusted user
+  aliases:
+    - trusted user
+- name: unauthorized--user--access
+  friendly_name: Unauthorized user access
+  aliases:
+    - unauthorized user access
+- name: under--utilized--security
+  friendly_name: Under utilized security
+  aliases:
+    - under utilized security
+- name: unify--endpoint--management
+  friendly_name: Unify endpoint management
+  aliases:
+    - unify endpoint management
