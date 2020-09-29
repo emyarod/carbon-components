@@ -414,6 +414,7 @@ categories:
       - iot--munich
       - solve
       - transform
+      - transform--01
   - name: Learning
     members:
       - intelligence
