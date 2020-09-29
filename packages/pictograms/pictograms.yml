@@ -1968,7 +1968,7 @@
     - headphones
     - electronics
 - name: heart
-  friendly_name: Love
+  friendly_name: Heart
   aliases:
     - heart
     - love
