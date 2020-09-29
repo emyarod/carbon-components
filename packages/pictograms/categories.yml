@@ -702,6 +702,7 @@ categories:
       - language--02
       - language--03
       - language--04
+      - language--05
       - language--translation
       - language--translation--alphabet--a--expanded
       - natural--language--classifier
@@ -720,6 +721,7 @@ categories:
       - visual--insights
       - visual--recognition
       - watson--avatar
+      - watson--logo
   - name: Weather
     members:
       - cloudy
