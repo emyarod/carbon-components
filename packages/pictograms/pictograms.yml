@@ -3848,6 +3848,12 @@
     - time lapse
     - lapse
     - time
+- name: time--lapse
+  friendly_name: Time lapse
+  aliases:
+    - time lapse
+    - lapse
+    - time
 - name: toggle
   friendly_name: Toggle
   aliases:
