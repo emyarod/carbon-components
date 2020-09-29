@@ -402,7 +402,8 @@ categories:
       - steel
       - telecom
       - tractor
-      - weather
+      - weather # TODO: remove in next release?
+      - weather--01
       - wheat
       - wind--power
       - wine
