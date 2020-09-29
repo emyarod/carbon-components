@@ -1404,6 +1404,13 @@
     - africa
     - continent
     - location
+- name: europe--africa
+  friendly_name: Europe Africa
+  aliases:
+    - europe
+    - africa
+    - continent
+    - location
 - name: expand--horz
   friendly_name: Expand horz
   aliases:
