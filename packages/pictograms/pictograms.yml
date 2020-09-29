@@ -4290,6 +4290,10 @@
   friendly_name: Weather 01
   aliases:
     - weather
+- name: weather--02
+  friendly_name: Weather 02
+  aliases:
+    - weather
 - name: web--developer
   friendly_name: Web developer
   aliases:

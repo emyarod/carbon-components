@@ -116,5 +116,6 @@ deprecated:
     reason:
       The warning--alt pictogram has been deprecated in favor of warning--02
   - name: time-lapse
-    reason:
-      The time-lapse pictogram has been deprecated in favor of time--lapse-
+    reason: The time-lapse pictogram has been deprecated in favor of time--lapse
+  - name: weather
+    reason: The weather pictogram has been deprecated in favor of weather--02
