@@ -2977,6 +2977,13 @@
     - private
     - network
 - name: private--network--01
+  friendly_name: Private network 01
+  aliases:
+    - private network 01
+    - private network
+    - private
+    - network
+- name: private--network--02
   friendly_name: Private network 02
   aliases:
     - private network 02
@@ -2991,6 +2998,20 @@
     - private
     - network
 - name: private--network--alt--01
+  friendly_name: Private network 04
+  aliases:
+    - private network 04
+    - private network
+    - private
+    - network
+- name: private--network--03
+  friendly_name: Private network 03
+  aliases:
+    - private network 03
+    - private network
+    - private
+    - network
+- name: private--network--04
   friendly_name: Private network 04
   aliases:
     - private network 04
@@ -3900,6 +3921,12 @@
     - network
 - name: transform--01
   friendly_name: Transform 01
+  aliases:
+    - transform
+    - networking
+    - network
+- name: transform--02
+  friendly_name: Transform 02
   aliases:
     - transform
     - networking
