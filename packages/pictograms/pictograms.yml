@@ -369,15 +369,6 @@
     - data analytics
     - analytics
     - data
-- name: box-plot
-  friendly_name: Box plot
-  aliases:
-    - box
-    - plot
-    - box plot
-    - data analytics
-    - analytics
-    - data
 - name: bug--virus--malware
   friendly_name: Bug virus malware
   aliases:
@@ -765,16 +756,6 @@
     - debit
     - chip
 - name: circle--packing
-  friendly_name: Circle Packing
-  aliases:
-    - circle
-    - packing
-    - circle packing
-    - chart
-    - data
-    - analytics
-    - data analytics
-- name: circle-packing
   friendly_name: Circle packing
   aliases:
     - circle packing
@@ -1334,19 +1315,13 @@
   aliases:
     - download 02
     - download
-- name: dubai--palm--islands
+- name: dubai--palm-islands
   friendly_name: Dubai Palm Islands
   aliases:
     - Dubai palm islands
     - Dubai
     - city
     - cities
-- name: dubai--palm-islands
-  friendly_name: Dubai Palm Islands
-  aliases:
-    - Dubai Palm Islands
-    - cities
-    - city
 - name: dubai--skyscraper
   friendly_name: Dubai skyscraper
   aliases:
@@ -1494,13 +1469,6 @@
     - escalator up
     - escalator
 - name: europe--africa
-  friendly_name: Europe Africa
-  aliases:
-    - europe
-    - africa
-    - continent
-    - location
-- name: europe-africa
   friendly_name: Europe Africa
   aliases:
     - europe
@@ -2059,15 +2027,6 @@
     - heat map 01
     - heat map
     - heat
-    - chart
-    - data analytics
-    - analytics
-- name: heat--map--01
-  friendly_name: Heat Map 01
-  aliases:
-    - heat map 01
-    - heat map
-    - heat
     - map
     - chart
     - data
@@ -2077,14 +2036,6 @@
   friendly_name: Heat map 02
   aliases:
     - heat map 02
-    - heat
-    - chart
-    - data analytics
-    - analytics
-- name: heat--map--02
-  friendly_name: Heat Map 02
-  aliases:
-    - heat map 02
     - heat map
     - heat
     - map
@@ -2092,14 +2043,6 @@
     - data
     - analytics
     - data analytics
-- name: heat-map--02
-  friendly_name: Heat map 02
-  aliases:
-    - heat map 02
-    - heat
-    - chart
-    - data analytics
-    - analytics
 - name: high--five
   friendly_name: High five
   aliases:
@@ -2407,20 +2350,9 @@
     - network
     - security
 - name: locked--network--01
-  friendly_name: Locked Network 01
-  aliases:
-    - locked network 01
-    - locked network
-    - network
-    - security
-- name: locked--network--01
   friendly_name: Locked network 01
   aliases:
     - locked network 01
-- name: locked--network--02
-  friendly_name: Locked Network 02
-  aliases:
-    - locked network 02
     - locked network
     - network
     - security
@@ -2428,6 +2360,9 @@
   friendly_name: Locked network 02
   aliases:
     - locked network 02
+    - locked network
+    - network
+    - security
 - name: locked--network--alt
   friendly_name: Locked Network 02
   aliases:
@@ -2575,13 +2510,6 @@
     - data
     - analytics
     - data analytics
-- name: math-curve
-  friendly_name: Math curve
-  aliases:
-    - math curve
-    - data analytics
-    - data
-    - analytics
 - name: maximize
   friendly_name: Maximize
   aliases:
@@ -2617,39 +2545,20 @@
     - time
     - dashboard
     - instrument
-- name: mexico-city--angel--of--independence
-  friendly_name: Mexico City Angel of Independence
-  aliases:
-    - Mexico City Angel of Independence
-    - statue
-    - city
-    - cities
 - name: mexico-city--angel-of-independence
   friendly_name: Mexico City Angel of Independence
   aliases:
     - Mexico City Angel of Independence
     - statue
-    - city
-    - cities
-- name: mexico-city--angel-of-independence
-  friendly_name: Mexico City Angel of Independence
-  aliases:
-    - Mexico City Angel of Independence
-    - cities
-    - city
-- name: mexico-city--museo--soumaya
-  friendly_name: Mexico City Museo Soumaya
-  aliases:
-    - Mexico City Museo Soumaya
-    - museum
     - city
     - cities
 - name: mexico-city--museo-soumaya
   friendly_name: Mexico City Museo Soumaya
   aliases:
     - Mexico City Museo Soumaya
-    - cities
+    - museum
     - city
+    - cities
 - name: microorganisms
   friendly_name: Microorganisms
   aliases:
@@ -2895,12 +2804,6 @@
     - Manhattan
     - city
     - cities
-- name: nyc--manhattan--01
-  friendly_name: NYC Manhattan 01
-  aliases:
-    - NYC Manhattan 01
-    - cities
-    - city
 - name: nyc--manhattan--02
   friendly_name: NYC Manhattan 02
   aliases:
@@ -2911,12 +2814,6 @@
     - Manhattan
     - city
     - cities
-- name: nyc--manhattan--02
-  friendly_name: NYC Manhattan 02
-  aliases:
-    - NYC Manhattan 02
-    - cities
-    - city
 - name: nyc--manhattan--alt
   friendly_name: NYC Manhattan 02
   aliases:
@@ -3167,24 +3064,6 @@
     - data analytics
     - data
     - analytics
-- name: population--diagram
-  friendly_name: Population Diagram
-  aliases:
-    - population diagram
-    - population
-    - diagram
-    - data
-    - analytics
-    - data analytics
-- name: population-diagram
-  friendly_name: Population diagram
-  aliases:
-    - population diagram
-    - population
-    - charts
-    - data analytics
-    - data
-    - analytics
 - name: power
   friendly_name: Power
   aliases:
@@ -3393,15 +3272,6 @@
     - refresh
     - update
 - name: relationship--diagram
-  friendly_name: Relationship diagram
-  aliases:
-    - relationship diagram
-    - relationship
-    - data analytics
-    - data
-    - analytics
-    - chart
-- name: relationship--diagram
   friendly_name: Relationship Diagram
   aliases:
     - relationship diagram
@@ -3418,15 +3288,6 @@
     - relationship
     - watson
     - AI
-- name: relationship-diagram
-  friendly_name: Relationship diagram
-  aliases:
-    - relationship diagram
-    - relationship
-    - data analytics
-    - data
-    - analytics
-    - chart
 - name: renew
   friendly_name: Renew
   aliases:
@@ -3576,26 +3437,6 @@
     - weight
     - healthcare
 - name: scatter--matrix
-  friendly_name: Scatter matrix
-  aliases:
-    - scatter matrix
-    - scatter
-    - matrix
-    - chart
-    - data analytics
-    - data
-    - analytics
-- name: scatter--matrix
-  friendly_name: Scatter Matrix
-  aliases:
-    - scatter matrix
-    - matrix
-    - scatter
-    - chart
-    - data
-    - analytics
-    - data analytics
-- name: scatter-matrix
   friendly_name: Scatter matrix
   aliases:
     - scatter matrix
@@ -4109,13 +3950,7 @@
     - time plot
     - data analytics
     - data
-    - analytics
-- name: time-lapse
-  friendly_name: Time lapse
-  aliases:
-    - time lapse
-    - lapse
-    - time
+    - analytic
 - name: toggle
   friendly_name: Toggle
   aliases:
@@ -4653,15 +4488,6 @@
     - wireless
     - home
 - name: word--cloud
-  friendly_name: Word cloud
-  aliases:
-    - word cloud
-    - word
-    - cloud
-    - data analytics
-    - data
-    - analytics
-- name: word-cloud
   friendly_name: Word cloud
   aliases:
     - word cloud

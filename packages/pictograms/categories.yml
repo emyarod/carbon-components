@@ -72,7 +72,6 @@ categories:
       - chicago
       - copenhagen--planetarium
       - copenhagen--snekkja
-      - dubai--palm--islands
       - dubai--palm-islands
       - dubai--skyscraper
       - dublin--brewery
@@ -85,10 +84,7 @@ categories:
       - madrid--skyscrapers
       - madrid--statue
       - melbourne
-      - mexico-city--angel--of--independence
       - mexico-city--angel-of-independence
-      - mexico-city--angel-of-independence
-      - mexico-city--museo--soumaya
       - mexico-city--museo-soumaya
       - milan--duomo--di--milano
       - milan--skyscrapers
@@ -98,8 +94,6 @@ categories:
       - nyc--brooklyn
       - nyc--manhattan
       - nyc--manhattan--01
-      - nyc--manhattan--01
-      - nyc--manhattan--02
       - nyc--manhattan--02
       - nyc--manhattan--alt
       - nyc--statue-of-liberty
@@ -195,7 +189,6 @@ categories:
       - analyze
       - blockchain
       - box--plot
-      - box-plot
       - chart--3D
       - chart--area
       - chart--bar
@@ -219,7 +212,6 @@ categories:
       - chart--sunburst
       - chart--t-SNE
       - circle--packing
-      - circle-packing
       - code--syntax
       - data--set
       - employee--insights
@@ -228,19 +220,14 @@ categories:
       - heat--map
       - heat--map--01
       - heat--map--02
-      - heat-map--02
       - math--curve
-      - math-curve
       - population--diagram
-      - population-diagram
       - q-q-plot
       - rank
       - relationship--diagram
-      - relationship-diagram
       - report
       - sample--file
       - scatter--matrix
-      - scatter-matrix
       - secure--data
       - stem--leaf--plot
       - time--plot
@@ -248,7 +235,6 @@ categories:
       - tree--map
       - user--analytics
       - word--cloud
-      - word-cloud
   - name: Data Storage
     members:
       - archive
@@ -488,7 +474,6 @@ categories:
     members:
       - americas
       - asia--australia
-      - europe-africa
       - europe--africa
       - globe
       - globe--locations
@@ -687,7 +672,6 @@ categories:
       - meter
       - speedometer
       - time
-      - time-lapse
       - time--lapse
   - name: Transportation
     members:
