@@ -194,8 +194,8 @@ categories:
     members:
       - analyze
       - blockchain
-      - box-plot
       - box--plot
+      - box-plot
       - chart--3D
       - chart--area
       - chart--bar
@@ -218,6 +218,7 @@ categories:
       - chart--stepper
       - chart--sunburst
       - chart--t-SNE
+      - circle--packing
       - circle-packing
       - code--syntax
       - data--set
@@ -228,25 +229,26 @@ categories:
       - heat--map--01
       - heat--map--02
       - heat-map--02
+      - math--curve
       - math-curve
-      - population-diagram
       - population--diagram
+      - population-diagram
       - q-q-plot
       - rank
-      - relationship-diagram
       - relationship--diagram
+      - relationship-diagram
       - report
       - sample--file
-      - scatter-matrix
       - scatter--matrix
+      - scatter-matrix
       - secure--data
       - stem--leaf--plot
       - time--plot
       - tree--diagram
       - tree--map
       - user--analytics
-      - word-cloud
       - word--cloud
+      - word-cloud
   - name: Data Storage
     members:
       - archive

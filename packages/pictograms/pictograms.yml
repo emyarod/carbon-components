@@ -369,6 +369,15 @@
     - data analytics
     - analytics
     - data
+- name: box--plot
+  friendly_name: Box Plot
+  aliases:
+    - box plot
+    - box
+    - plot
+    - data
+    - analytics
+    - data analytics
 - name: box-plot
   friendly_name: Box plot
   aliases:
@@ -764,6 +773,16 @@
     - chip debit
     - debit
     - chip
+- name: circle--packing
+  friendly_name: Circle Packing
+  aliases:
+    - circle
+    - packing
+    - circle packing
+    - chart
+    - data
+    - analytics
+    - data analytics
 - name: circle-packing
   friendly_name: Circle packing
   aliases:
@@ -2052,6 +2071,17 @@
     - chart
     - data analytics
     - analytics
+- name: heat--map--01
+  friendly_name: Heat Map 01
+  aliases:
+    - heat map 01
+    - heat map
+    - heat
+    - map
+    - chart
+    - data
+    - analytics
+    - data analytics
 - name: heat--map--02
   friendly_name: Heat map 02
   aliases:
@@ -2060,6 +2090,17 @@
     - chart
     - data analytics
     - analytics
+- name: heat--map--02
+  friendly_name: Heat Map 02
+  aliases:
+    - heat map 02
+    - heat map
+    - heat
+    - map
+    - chart
+    - data
+    - analytics
+    - data analytics
 - name: heat-map--02
   friendly_name: Heat map 02
   aliases:
@@ -2534,6 +2575,15 @@
   friendly_name: Master threat hunting
   aliases:
     - master threat hunting
+- name: math--curve
+  friendly_name: Math Curve
+  aliases:
+    - math curve
+    - math
+    - curve
+    - data
+    - analytics
+    - data analytics
 - name: math-curve
   friendly_name: Math curve
   aliases:
@@ -3126,6 +3176,15 @@
     - data analytics
     - data
     - analytics
+- name: population--diagram
+  friendly_name: Population Diagram
+  aliases:
+    - population diagram
+    - population
+    - diagram
+    - data
+    - analytics
+    - data analytics
 - name: population-diagram
   friendly_name: Population diagram
   aliases:
@@ -3351,6 +3410,16 @@
     - data
     - analytics
     - chart
+- name: relationship--diagram
+  friendly_name: Relationship Diagram
+  aliases:
+    - relationship diagram
+    - diagram
+    - diagram
+    - chart
+    - data
+    - analytics
+    - data analytics
 - name: relationship--extraction
   friendly_name: Relationship extraction
   aliases:
@@ -3525,6 +3594,16 @@
     - data analytics
     - data
     - analytics
+- name: scatter--matrix
+  friendly_name: Scatter Matrix
+  aliases:
+    - scatter matrix
+    - matrix
+    - scatter
+    - chart
+    - data
+    - analytics
+    - data analytics
 - name: scatter-matrix
   friendly_name: Scatter matrix
   aliases:
@@ -4591,6 +4670,15 @@
     - data analytics
     - data
     - analytics
+- name: word--cloud
+  friendly_name: Word Cloud
+  aliases:
+    - word cloud
+    - word
+    - cloud
+    - data
+    - analytics
+    - data analytics
 - name: word-cloud
   friendly_name: Word cloud
   aliases:
