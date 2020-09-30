@@ -59,19 +59,25 @@ categories:
       - amsterdam--windmill
       - austin
       - bangalore
+      - barcelona
       #    - basel
       - beijing--municipal
       - beijing--tower
-      - berlin--brandenburg--gate
       - berlin--brandenburg #DEPRECATED: use berlin--brandenburg--gate instead
+      - berlin--brandenburg--gate
       - berlin--cathedral
       - berlin--tower
+      - boston--zakim-bridge
+      - cairo--giza-plateau
+      - chicago
       - copenhagen--planetarium
       - copenhagen--snekkja
       - dubai--palm--islands
+      - dubai--palm-islands
       - dubai--skyscraper
       - dublin--brewery
       - dublin--castle
+      - hamburg--philharmone
       - london
       - london--big--ben
       - london--expanded--base
@@ -81,7 +87,9 @@ categories:
       - melbourne
       - mexico-city--angel--of--independence
       - mexico-city--angel-of-independence
+      - mexico-city--angel-of-independence
       - mexico-city--museo--soumaya
+      - mexico-city--museo-soumaya
       - milan--duomo--di--milano
       - milan--skyscrapers
       - moscow
@@ -90,9 +98,19 @@ categories:
       - nyc--brooklyn
       - nyc--manhattan
       - nyc--manhattan--01
+      - nyc--manhattan--01
+      - nyc--manhattan--02
       - nyc--manhattan--02
       - nyc--manhattan--alt
+      - nyc--statue-of-liberty
+      - paris--arc-de-triomphe
+      - paris--louvre
+      - paris--notre-dame
+      - paris--pompidou-center
       #    - portland
+      - prague
+      - prague--charles--bridge--tower
+      - raleigh-nc
       - rome
       - san-francisco
       - san-francisco--fog
@@ -101,7 +119,7 @@ categories:
       - seattle
       #    - shanghai
       - singapore
-      #    - stockholm
+      - stockholm
       - tel--aviv
       - tokyo--cherry--blossom
       - tokyo--gates
