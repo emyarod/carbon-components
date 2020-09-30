@@ -4574,8 +4574,8 @@
     - watson
     - avatar
 - name: watson--logo
-  friendly name: IBM Watson
-  alias:
+  friendly_name: IBM Watson
+  aliases:
     - watson logo
     - logo
     - watson
