@@ -4670,15 +4670,6 @@
     - data analytics
     - data
     - analytics
-- name: word--cloud
-  friendly_name: Word Cloud
-  aliases:
-    - word cloud
-    - word
-    - cloud
-    - data
-    - analytics
-    - data analytics
 - name: word-cloud
   friendly_name: Word cloud
   aliases:
