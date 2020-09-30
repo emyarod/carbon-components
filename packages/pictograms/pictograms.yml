@@ -348,15 +348,6 @@
     - block
     - chain
     - blockchain
-- name: box-plot
-  friendly_name: Box plot
-  aliases:
-    - box
-    - plot
-    - box plot
-    - data analytics
-    - analytics
-    - data
 - name: box--plot
   friendly_name: Box plot
   aliases:
@@ -366,10 +357,15 @@
     - data analytics
     - analytics
     - data
-- name: build--leadership--and--culture
-  friendly_name: Build leadership and culture
+- name: box-plot
+  friendly_name: Box plot
   aliases:
-    - build leadership and culture
+    - box
+    - plot
+    - box plot
+    - data analytics
+    - analytics
+    - data
 - name: bug--virus--malware
   friendly_name: Bug virus malware
   aliases:
@@ -380,6 +376,10 @@
     - build
     - iot
     - internet of things
+- name: build--leadership--and--culture
+  friendly_name: Build leadership and culture
+  aliases:
+    - build leadership and culture
 - name: building
   friendly_name: Building
   aliases:
@@ -1216,6 +1216,14 @@
   aliases:
     - digital
     - cloud
+- name: digital--id
+  friendly_name: Digital id
+  aliases:
+    - digital id
+- name: digital--trust
+  friendly_name: Digital trust
+  aliases:
+    - digital trust
 - name: dining
   friendly_name: Dining
   aliases:
@@ -1379,6 +1387,10 @@
   friendly_name: Employee insights
   aliases:
     - employee insights
+- name: endpoint--protection
+  friendly_name: Endpoint protection
+  aliases:
+    - endpoint protection
 - name: engine
   friendly_name: Engine
   aliases:
@@ -1441,14 +1453,14 @@
   aliases:
     - escalator up
     - escalator
-- name: europe-africa
+- name: europe--africa
   friendly_name: Europe Africa
   aliases:
     - europe
     - africa
     - continent
     - location
-- name: europe--africa
+- name: europe-africa
   friendly_name: Europe Africa
   aliases:
     - europe
@@ -1737,6 +1749,10 @@
     - gear
     - settings
     - machinery
+- name: get--ahead--of--risk--and--compliance
+  friendly_name: Get ahead of risk and compliance
+  aliases:
+    - get ahead of risk and compliance
 - name: gift
   friendly_name: Gift
   aliases:
@@ -1885,6 +1901,10 @@
     - target
     - goals
     - checkpoint
+- name: govern--users--and--identities
+  friendly_name: Govern users and identities
+  aliases:
+    - govern users and identities
 - name: group
   friendly_name: Group
   aliases:
@@ -2019,6 +2039,10 @@
     - greeting
     - gesture
     - people
+- name: high--risk--users
+  friendly_name: High risk users
+  aliases:
+    - high risk users
 - name: hills
   friendly_name: Hills
   aliases:
@@ -2114,6 +2138,10 @@
     - design
     - development
     - design and development
+- name: identity--trust--assessment
+  friendly_name: Identity trust assessment
+  aliases:
+    - identity trust assessment
 - name: innovate
   friendly_name: Innovate
   aliases:
@@ -2317,6 +2345,10 @@
     - locked network
     - network
     - security
+- name: locked--network--01
+  friendly_name: Locked network 01
+  aliases:
+    - locked network 01
 - name: locked--network--02
   friendly_name: Locked Network 02
   aliases:
@@ -2324,6 +2356,10 @@
     - locked network
     - network
     - security
+- name: locked--network--02
+  friendly_name: Locked network 02
+  aliases:
+    - locked network 02
 - name: locked--network--alt
   friendly_name: Locked Network 02
   aliases:
@@ -2458,6 +2494,10 @@
     - mas
     - code
     - software
+- name: master--threat--hunting
+  friendly_name: Master threat hunting
+  aliases:
+    - master threat hunting
 - name: math-curve
   friendly_name: Math curve
   aliases:
@@ -2677,6 +2717,10 @@
     - network
     - networking
     - connect
+- name: network--protection
+  friendly_name: Network protection
+  aliases:
+    - network protection
 - name: network--services
   friendly_name: Network services
   aliases:
@@ -2983,7 +3027,7 @@
     - enforcement
     - security
     - people
-- name: population-diagram
+- name: population--diagram
   friendly_name: Population diagram
   aliases:
     - population diagram
@@ -2992,7 +3036,7 @@
     - data analytics
     - data
     - analytics
-- name: population--diagram
+- name: population-diagram
   friendly_name: Population diagram
   aliases:
     - population diagram
@@ -3066,20 +3110,6 @@
     - private network
     - private
     - network
-- name: private--network--alt
-  friendly_name: Private network 03
-  aliases:
-    - private network 03
-    - private network
-    - private
-    - network
-- name: private--network--alt--01
-  friendly_name: Private network 04
-  aliases:
-    - private network 04
-    - private network
-    - private
-    - network
 - name: private--network--03
   friendly_name: Private network 03
   aliases:
@@ -3088,6 +3118,20 @@
     - private
     - network
 - name: private--network--04
+  friendly_name: Private network 04
+  aliases:
+    - private network 04
+    - private network
+    - private
+    - network
+- name: private--network--alt
+  friendly_name: Private network 03
+  aliases:
+    - private network 03
+    - private network
+    - private
+    - network
+- name: private--network--alt--01
   friendly_name: Private network 04
   aliases:
     - private network 04
@@ -3103,6 +3147,10 @@
   aliases:
     - progress
     - IBM
+- name: protect--critical--assets
+  friendly_name: Protect critical assets
+  aliases:
+    - protect critical assets
 - name: puzzle
   friendly_name: Puzzle
   aliases:
@@ -3186,14 +3234,7 @@
   aliases:
     - refresh
     - update
-- name: relationship--extraction
-  friendly_name: Relationship extraction
-  aliases:
-    - relationship extraction
-    - relationship
-    - watson
-    - AI
-- name: relationship-diagram
+- name: relationship--diagram
   friendly_name: Relationship diagram
   aliases:
     - relationship diagram
@@ -3202,7 +3243,14 @@
     - data
     - analytics
     - chart
-- name: relationship--diagram
+- name: relationship--extraction
+  friendly_name: Relationship extraction
+  aliases:
+    - relationship extraction
+    - relationship
+    - watson
+    - AI
+- name: relationship-diagram
   friendly_name: Relationship diagram
   aliases:
     - relationship diagram
@@ -3359,7 +3407,7 @@
     - scale
     - weight
     - healthcare
-- name: scatter-matrix
+- name: scatter--matrix
   friendly_name: Scatter matrix
   aliases:
     - scatter matrix
@@ -3369,7 +3417,7 @@
     - data analytics
     - data
     - analytics
-- name: scatter--matrix
+- name: scatter-matrix
   friendly_name: Scatter matrix
   aliases:
     - scatter matrix
@@ -3393,6 +3441,10 @@
     - data
     - data analytics
     - analytics
+- name: secure--hybrid--cloud
+  friendly_name: Secure hybrid cloud
+  aliases:
+    - secure hybrid cloud
 - name: secure--profile
   friendly_name: Secure profile
   aliases:
@@ -3404,6 +3456,18 @@
   aliases:
     - security
     - shield
+- name: security--as--a--service
+  friendly_name: Security as a service
+  aliases:
+    - security as a service
+- name: security--hygiene
+  friendly_name: Security hygiene
+  aliases:
+    - security hygiene
+- name: security--intelligence
+  friendly_name: Security intelligence
+  aliases:
+    - security intelligence
 - name: security--shield
   friendly_name: Security shield
   aliases:
@@ -3612,6 +3676,10 @@
   aliases:
     - strategy
     - business
+- name: strategy--and--risk
+  friendly_name: Strategy and risk
+  aliases:
+    - strategy and risk
 - name: strategy--direct
   friendly_name: Strategy direct
   aliases:
@@ -3836,11 +3904,21 @@
     - speech
     - watson
     - AI
+- name: threat--management
+  friendly_name: Threat management
+  aliases:
+    - threat management
 - name: time
   friendly_name: Time
   aliases:
     - time
     - clock
+- name: time--lapse
+  friendly_name: Time lapse
+  aliases:
+    - time lapse
+    - lapse
+    - time
 - name: time--plot
   friendly_name: Time plot
   aliases:
@@ -3849,12 +3927,6 @@
     - data
     - analytics
 - name: time-lapse
-  friendly_name: Time lapse
-  aliases:
-    - time lapse
-    - lapse
-    - time
-- name: time--lapse
   friendly_name: Time lapse
   aliases:
     - time lapse
@@ -3899,6 +3971,10 @@
     - tone analyzer
     - watson
     - AI
+- name: tool--overload
+  friendly_name: Tool overload
+  aliases:
+    - tool overload
 - name: tools
   friendly_name: Tools
   aliases:
@@ -4062,6 +4138,22 @@
   aliases:
     - trust
     - blockchain
+- name: trusted--user
+  friendly_name: Trusted user
+  aliases:
+    - trusted user
+- name: unauthorized--user--access
+  friendly_name: Unauthorized user access
+  aliases:
+    - unauthorized user access
+- name: under--utilized--security
+  friendly_name: Under utilized security
+  aliases:
+    - under utilized security
+- name: unify--endpoint--management
+  friendly_name: Unify endpoint management
+  aliases:
+    - unify endpoint management
 - name: university
   friendly_name: University
   aliases:
@@ -4376,7 +4468,7 @@
     - modem
     - wireless
     - home
-- name: word-cloud
+- name: word--cloud
   friendly_name: Word cloud
   aliases:
     - word cloud
@@ -4385,7 +4477,7 @@
     - data analytics
     - data
     - analytics
-- name: word--cloud
+- name: word-cloud
   friendly_name: Word cloud
   aliases:
     - word cloud
@@ -4434,95 +4526,3 @@
   aliases:
     - yoga 04
     - lifestyle
-- name: digital--id
-  friendly_name: Digital id
-  aliases:
-    - digital id
-- name: digital--trust
-  friendly_name: Digital trust
-  aliases:
-    - digital trust
-- name: endpoint--protection
-  friendly_name: Endpoint protection
-  aliases:
-    - endpoint protection
-- name: get--ahead--of--risk--and--compliance
-  friendly_name: Get ahead of risk and compliance
-  aliases:
-    - get ahead of risk and compliance
-- name: govern--users--and--identities
-  friendly_name: Govern users and identities
-  aliases:
-    - govern users and identities
-- name: high--risk--users
-  friendly_name: High risk users
-  aliases:
-    - high risk users
-- name: identity--trust--assessment
-  friendly_name: Identity trust assessment
-  aliases:
-    - identity trust assessment
-- name: locked--network--01
-  friendly_name: Locked network 01
-  aliases:
-    - locked network 01
-- name: locked--network--02
-  friendly_name: Locked network 02
-  aliases:
-    - locked network 02
-- name: master--threat--hunting
-  friendly_name: Master threat hunting
-  aliases:
-    - master threat hunting
-- name: network--protection
-  friendly_name: Network protection
-  aliases:
-    - network protection
-- name: protect--critical--assets
-  friendly_name: Protect critical assets
-  aliases:
-    - protect critical assets
-- name: secure--hybrid--cloud
-  friendly_name: Secure hybrid cloud
-  aliases:
-    - secure hybrid cloud
-- name: security--as--a--service
-  friendly_name: Security as a service
-  aliases:
-    - security as a service
-- name: security--hygiene
-  friendly_name: Security hygiene
-  aliases:
-    - security hygiene
-- name: security--intelligence
-  friendly_name: Security intelligence
-  aliases:
-    - security intelligence
-- name: strategy--and--risk
-  friendly_name: Strategy and risk
-  aliases:
-    - strategy and risk
-- name: threat--management
-  friendly_name: Threat management
-  aliases:
-    - threat management
-- name: tool--overload
-  friendly_name: Tool overload
-  aliases:
-    - tool overload
-- name: trusted--user
-  friendly_name: Trusted user
-  aliases:
-    - trusted user
-- name: unauthorized--user--access
-  friendly_name: Unauthorized user access
-  aliases:
-    - unauthorized user access
-- name: under--utilized--security
-  friendly_name: Under utilized security
-  aliases:
-    - under utilized security
-- name: unify--endpoint--management
-  friendly_name: Unify endpoint management
-  aliases:
-    - unify endpoint management
