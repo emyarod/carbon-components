@@ -398,6 +398,7 @@ categories:
       - ibm--ix
       - ibm--z
       - progress
+      - world--community--grid
   - name: Industry
     members:
       - agriculture

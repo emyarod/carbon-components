@@ -4679,6 +4679,13 @@
     - data analytics
     - data
     - analytics
+- name: world--community--grid
+  friendly_name: World Community Grid
+  aliases:
+    - world community grid
+    - world
+    - community
+    - grid
 - name: wrecking--ball
   friendly_name: Wrecking ball
   aliases:
