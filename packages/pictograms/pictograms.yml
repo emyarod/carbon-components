@@ -369,15 +369,6 @@
     - data analytics
     - analytics
     - data
-- name: box--plot
-  friendly_name: Box Plot
-  aliases:
-    - box plot
-    - box
-    - plot
-    - data
-    - analytics
-    - data analytics
 - name: box-plot
   friendly_name: Box plot
   aliases:
