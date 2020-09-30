@@ -506,9 +506,9 @@ categories:
       - automation--decision
       - distribution--ledger
       - global--network
-      - integration
-      - inspect--data
       - global--partner
+      - inspect--data
+      - integration
       - network
       - network--services
       - networking--01
